@@ -1,0 +1,33 @@
+name = "SPECULAPipeWireHIL"
+uuid = "e41556b4-2a52-4a1a-932a-29b58442eb61"
+version = "0.1.0"
+authors = ["Darryl Gamroth"]
+
+[deps]
+AdaptiveOpticsSim = "002fb5eb-ad68-44a0-adbe-b299bfc2febc"
+AdaptiveOpticsSimPipeWireHIL = "355e2bce-7765-4934-ac1c-873e1c98ec3d"
+PipeWireAO = "5d815c25-fdf3-4508-8205-db8be38ea5d0"
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+
+[sources]
+AdaptiveOpticsSimPipeWireHIL = {url = "https://github.com/DarrylGamroth/AdaptiveOpticsSimPipeWireHIL.git", rev = "72bb8855ef8e4f3bb4a8d7e1d110966bd842a54a"}
+
+[compat]
+AdaptiveOpticsSim = "0.3.31"
+AdaptiveOpticsSimPipeWireHIL = "0.5.11"
+Aqua = "0.8"
+PipeWireAO = "0.9.6"
+PipeWireAO_jll = "4"
+PythonCall = "0.9.37"
+Test = "1"
+UUIDs = "1"
+julia = "1.13"
+
+[extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+PipeWireAO_jll = "cde84cf6-9a21-5ce0-b5e3-1526e778c30b"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Aqua", "PipeWireAO_jll", "Test"]

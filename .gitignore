@@ -1,0 +1,7 @@
+Manifest.toml
+LocalPreferences.toml
+.CondaPkg/
+.venv/
+__pycache__/
+*.cov
+lcov.info
